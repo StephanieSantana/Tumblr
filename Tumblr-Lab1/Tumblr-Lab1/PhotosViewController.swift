@@ -20,7 +20,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PhottoCell", for: indexPath) as! PhotoCell
        // cell.textLabel?.text = "This is row \(indexPath.row)"
         let post = posts[indexPath.row]
         // 1.            // 2.          // 3.
@@ -48,7 +48,6 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         
         tableView.delegate = self
-        tableView.dataSource = self
         
         // Network request snippet
         let url = URL(string: "https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV")!
