@@ -13,7 +13,7 @@ class PhotosDetailsViewController: UIViewController {
     
     @IBOutlet weak var detailsImage: UIImageView!
     
-     var post: [String: Any]!
+    var post: [String: Any]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
